@@ -75,9 +75,9 @@ with col4:
     
 # Simpan input user ke dictionary (untuk prediksi)
 input_data = {
-    "Age_at_enrollment": Age,
     "Gender": gender_value,
     "Scholarship_holder": scholarship_value,
+    "Age_at_enrollment": Age,
     "Curricular_units_1st_sem_enrolled": Enrolled1,
     "Curricular_units_1st_sem_evaluations": Evaluations1,
     "Curricular_units_1st_sem_approved": Approved1,
