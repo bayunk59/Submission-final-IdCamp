@@ -46,8 +46,8 @@ Selain dashboard, prediksi terkait kecenderungan status mahasiswa dapat juga dil
 
 1. Data pada proyek ini memiliki jumlah 4424 data tanpa ada data yang mmemiliki 'missing value".
 2. Datanya berisi 37 fitur dengan rincian:
-- 1 data dengan tipe data objek dengan fitur `Status`
-- 36 data lainnya dengan tipe data numerik
+   - 1 data dengan tipe data objek dengan fitur `Status`
+   - 36 data lainnya dengan tipe data numerik
 
 3. Jumlah data di setiap Status
 
@@ -78,8 +78,11 @@ Selain dashboard, prediksi terkait kecenderungan status mahasiswa dapat juga dil
 | 14  | Status                               | object    |
 
  5. Hasil Modellling
+    
     a. Decision Tree = Akurasi 60%
+    
     b. Random Forest = Akurasi 66%
+    
     c. Gradient Boosting = Akurasi 72%
     
 ### Rekomendasi Action Items
