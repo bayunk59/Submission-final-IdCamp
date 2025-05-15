@@ -1,5 +1,3 @@
-﻿# Submission-final-IdCamp
-
 # Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
 
 ## Business Understanding
@@ -56,39 +54,49 @@ Selanjutnya dibuat grafik untuk melihat jumlah mahasiswa berdasarkan `Status` ny
 | Enrolled  | 794    | 17.95%         |
 | **Total** | **4424** | **100.00%**  |
 
-Berdasakan data di atas dapat dilihat, jumlah mahasiswa yang berstatus *dropout* ada 32,12% dengan jumlah 1421 dari jumalh 4424 siswa. 
+Berdasakan data di atas dapat dilihat, jumlah mahasiswa yang berstatus *dropout* ada 32,12% dengan jumlah 1421 dari jumlah 4424 siswa. 
+Selanjutnya dilakukkan uji korelasi antar fitur numerik dengan 'Status', didapatkan nilai korelasi sebagai berikut:
 
-Selanjutnya dibuat sebuah fitur baru bernama `status_label` yang berasal dari fitur 'Status` dengan mengubah tipenya menjadi numerik. Status `Dropout` diubah menjadi angka 0, `Enrolled` diubah menjadi angka 1 dan `Graduate` diubah menjadi 2. Setelah itu fitur baru tersebut digunakan untuk membantu menentukan nilai korelasi dari setiap fitur terhadap fitur status.
-Saat dilakukan uji korelasi adidapatkan nilai sebagai berikut
+| No  | Fitur                                           | Korelasi    |
+|-----|-------------------------------------------------|-------------|
+| 1   | Curricular_units_2nd_sem_approved               | 0.624157    |
+| 2   | Curricular_units_2nd_sem_grade                  | 0.566827    |
+| 3   | Curricular_units_1st_sem_approved               | 0.529123    |
+| 4   | Curricular_units_1st_sem_grade                  | 0.485207    |
+| 5   | Tuition_fees_up_to_date                         | 0.409827    |
+| 6   | Scholarship_holder                              | 0.297595    |
+| 7   | Age_at_enrollment                               | -0.243438   |
+| 8   | Debtor                                          | -0.240999   |
+| 9   | Gender                                          | -0.229270   |
+| 10  | Application_mode                                | -0.221747   |
+| 11  | Curricular_units_2nd_sem_enrolled               | 0.175847    |
+| 12  | Curricular_units_1st_sem_enrolled               | 0.155974    |
+| 13  | Admission_grade                                 | 0.120889    |
+| 14  | Displaced                                       | 0.113986    |
+| 15  | Previous_qualification_grade                    | 0.103764    |
+| 16  | Curricular_units_2nd_sem_without_evaluations    | -0.094028   |
+| 17  | Curricular_units_2nd_sem_evaluations            | 0.092721    |
+| 18  | Marital_status                                  | -0.089804   |
+| 19  | Application_order                               | 0.089791    |
+| 20  | Daytime_evening_attendance                      | 0.075107    |
+| 21  | Curricular_units_1st_sem_without_evaluations    | -0.068702   |
+| 22  | Previous_qualification                          | -0.056039   |
+| 23  | Curricular_units_2nd_sem_credited               | 0.054004    |
+| 24  | Curricular_units_1st_sem_credited               | 0.048150    |
+| 25  | Curricular_units_1st_sem_evaluations            | 0.044362    |
+| 26  | GDP                                             | 0.044135    |
+| 27  | Mothers_qualification                           | -0.043178   |
+| 28  | Course                                          | 0.034219    |
+| 29  | Inflation_rate                                  | -0.026874   |
+| 30  | Nacionality                                     | -0.014801   |
+| 31  | Unemployment_rate                               | 0.008627    |
+| 32  | Educational_special_needs                       | -0.007353   |
+| 33  | Mothers_occupation                              | -0.005629   |
+| 34  | International                                   | 0.003934    |
+| 35  | Fathers_occupation                              | -0.001899   |
+| 36  | Fathers_qualification                           | -0.001393   |
 
-| Fitur                                     | Korelasi  |
-|-------------------------------------------|-----------|
-| Curricular_units_2nd_sem_approved         | 0.624157  |
-| Curricular_units_2nd_sem_grade            | 0.566827  |
-| Curricular_units_1st_sem_approved         | 0.529123  |
-| Curricular_units_1st_sem_grade            | 0.485207  |
-| Tuition_fees_up_to_date                   | 0.409827  |
-| Scholarship_holder                        | 0.297595  |
-| Curricular_units_2nd_sem_enrolled         | 0.175847  |
-| Curricular_units_1st_sem_enrolled         | 0.155974  |
-| Admission_grade                           | 0.120889  |
-| Displaced                                 | 0.113986  |
-| Previous_qualification_grade              | 0.103764  |
-| Curricular_units_2nd_sem_evaluations      | 0.092721  |
-| Application_order                         | 0.089791  |
-| Daytime_evening_attendance                | 0.075107  |
-| Curricular_units_2nd_sem_credited         | 0.054004  |
-| Curricular_units_1st_sem_credited         | 0.048150  |
-| Curricular_units_1st_sem_evaluations      | 0.044362  |
-| GDP                                       | 0.044135  |
-| Course                                    | 0.034219  |
 
-| Fitur                                     | Korelasi  |
-|-------------------------------------------|-----------|
-| Application_mode                          | -0.221747 |
-| Gender                                    | -0.229270 |
-| Debtor                                    | -0.240999 |
-| Age_at_enrollment                         | -0.243438 |
 
 Dikarenakan nilai pada fitur `status_label` maka bisa disimpulkan nilai dengan korelasi positif cenderung berbanding lurus dengan status `Graduate` yang bernilai 2 dan korelasi negatif cenderung berbanding lurus dengan status `Dropout` yang bernilai 0.
 
