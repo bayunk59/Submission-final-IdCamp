@@ -87,6 +87,8 @@ for i, column in enumerate(num_features.columns, 1):
 plt.tight_layout()
 plt.show()
 
+# Melihat nilai korelasi fitur numerik dengan Status
+
 # Pisahkan kolom numerik saja (tanpa mengubah Status)
 numeric_cols = jaya_df.select_dtypes(include=['number'])
 
@@ -109,38 +111,7 @@ correlation_with_Status_sorted = Status_corr.reindex(
 print("Korelasi terhadap Status (dari paling signifikan):")
 print(correlation_with_Status_sorted)
 
-"""Dari sini bisa dilihat ada beberapa nilai korelasi di atas 0,10 yang negatif dan positif.
-
-Nilai positif menunjukkan dia berbanding lurus dengan status Graduate dan nilai negatif menunjukkan dia berbanding lurus dengan status Dropout
-
-**Nilai Positif**
-
-* Curricular_units_2nd_sem_approved               0.624157
-* Curricular_units_2nd_sem_grade                  0.566827
-* Curricular_units_1st_sem_approved               0.529123
-* Curricular_units_1st_sem_grade                  0.485207
-* Tuition_fees_up_to_date                         0.409827
-* Scholarship_holder                              0.297595
-* Curricular_units_2nd_sem_enrolled               0.175847
-* Curricular_units_1st_sem_enrolled               0.155974
-* Admission_grade                                 0.120889
-* Displaced                                       0.113986
-* Previous_qualification_grade                    0.103764
-* Curricular_units_2nd_sem_evaluations            0.092721
-* Application_order                               0.089791
-* Daytime_evening_attendance                      0.075107
-* Curricular_units_2nd_sem_credited               0.054004
-* Curricular_units_1st_sem_credited               0.048150
-* Curricular_units_1st_sem_evaluations            0.044362
-* GDP                                             0.044135
-* Course                                          0.034219
-
-**Nilai Negatif**
-
-* Application_mode                               -0.221747
-* Gender                                         -0.229270
-* Debtor                                         -0.240999
-* Age_at_enrollment                              -0.243438
+"""Dapat dilihat ada beberapa fitur yang memiliki korelasi tinggi dengan Status, baik secara positif maupun negatif
 
 # **Data Preparation / Preprocessing**
 """
@@ -148,7 +119,7 @@ Nilai positif menunjukkan dia berbanding lurus dengan status Graduate dan nilai 
 # Buat salinan data
 main_df = jaya_df.copy()
 
-# Hapus data yang tidak penting
+# Hapus data yang tidak dipakai
 
 main_df.drop(columns=[
     "Fathers_qualification",
