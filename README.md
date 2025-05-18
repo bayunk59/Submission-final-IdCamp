@@ -35,7 +35,7 @@ Setup environment:
 
 ## Business Dashboard
 
-![Dashboard - Bayun Kurniawan](https://github.com/user-attachments/assets/9c312d41-ffd0-43b7-b9bb-85a50da3e5a1)
+![Dashboard - Bayun Kurniawan](https://github.com/user-attachments/assets/b8dc4dfb-698e-4218-9f1a-4a34d2aaecd2)
 Dashboard tersebut menampilkan beberapa fitur yang ada dalam data tersebut mulai dari jumlah keseluruhan mahasiswa, jumlah pemegang beasiswa, dan lain sebagainya.
 username metabase: user@gmail.com
 password metabase: User12345
