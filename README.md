@@ -37,6 +37,8 @@ Setup environment:
 
 ![Dashboard - Bayun Kurniawan](https://github.com/user-attachments/assets/9c312d41-ffd0-43b7-b9bb-85a50da3e5a1)
 Dashboard tersebut menampilkan beberapa fitur yang ada dalam data tersebut mulai dari jumlah keseluruhan mahasiswa, jumlah pemegang beasiswa, dan lain sebagainya.
+username metabase: user@gmail.com
+password metabase: User12345
 
 Selain dashboard, prediksi terkait kecenderungan status mahasiswa dapat juga dilakukan melalui aplikasi streamlit
 
