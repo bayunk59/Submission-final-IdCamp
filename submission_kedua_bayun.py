@@ -483,7 +483,7 @@ y_pred_test = encoder.inverse_transform(y_pred_test)
 
 evaluating(y_pred=y_pred_test, y_true=y_test)
 
-"""Berdasarkan ketiga model yang saya coba, `Gradient Boosting` memiliki nilai akurasi tertinggi dengan presentase 72%
+"""Berdasarkan ketiga model yang telah dicoba, `Gradient Boosting` memiliki nilai akurasi tertinggi dengan presentase 72%
 
 
 """

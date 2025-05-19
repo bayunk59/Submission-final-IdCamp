@@ -7,7 +7,7 @@ Intitusi ini membutuhkan bantuan untuk mengidentifikasi apa penyebab mahasiswany
 
 ### Permasalahan Bisnis
 
-Institut Jaya Jaya mengalami masalahbesar karena jumlah mahasiswa yang tidak dapat menyelesaikan studinya lumayan tinggi. Kondisi ini dapat berdampak pada reputasi baik institusi ini.
+Institut Jaya Jaya mengalami masalah besar karena jumlah mahasiswa yang tidak dapat menyelesaikan studinya lumayan tinggi. Kondisi ini dapat berdampak pada reputasi baik institusi ini.
 
 ### Cakupan Proyek
 
@@ -37,7 +37,9 @@ Setup environment:
 
 ![Dashboard - Bayun Kurniawan](https://github.com/user-attachments/assets/b8dc4dfb-698e-4218-9f1a-4a34d2aaecd2)
 Dashboard tersebut menampilkan beberapa fitur yang ada dalam data tersebut mulai dari jumlah keseluruhan mahasiswa, jumlah pemegang beasiswa, dan lain sebagainya.
+
 username metabase: user@gmail.com
+
 password metabase: User12345
 
 Selain dashboard, prediksi terkait kecenderungan status mahasiswa dapat juga dilakukan melalui aplikasi streamlit
@@ -92,6 +94,6 @@ Selain dashboard, prediksi terkait kecenderungan status mahasiswa dapat juga dil
 
 Berdasarkan pada pengerjaan yang sudah dilakukan, rekomendasi action yang bisa dilakukan oleh Jaya Jaya institut adalah:
 
-1. Membantu pinjaman kepada mahasiswa untuk biaya kuliah atau menambah kuota beasiswa untuk mahasiswa yang membutuhkan
-2. Memberikan mentoring dan bimbingan lebih awal kepada mahasiswa
-3. Monitoring lebih awal terhadap mahasiswa terutama yang memiliki 4 kriteria di atas
+1. Membantu pinjaman kepada mahasiswa untuk biaya kuliah atau menambah kuota beasiswa untuk mahasiswa yang membutuhkan.
+2. Memberikan mentoring dan bimbingan lebih awal kepada mahasiswa.
+3. Monitoring lebih awal terhadap mahasiswa terutama pada 14 fitur yang digunakan pada modelling di atas.
